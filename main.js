@@ -2,7 +2,36 @@
  * YOUR CODE HERE *
 ******************/
 
+const numbers = [-5, 101, 0, 32.5]
+const doubleAll = []
+for(let i = 0; i < numbers.length; i++){
+  doubleAll.push(numbers[i] * 2)
+}
 
+const greetings = ['hello', 'there', 'you absolute fiend']
+const yelledGreetings = []
+for(let i = 0; i < greetings.length; i++){
+  yelledGreetings.push(greetings[i] + '!')
+}
+
+yelledGreetings
+
+const values = [-1, -3, 1000]
+const absoluteValues = []
+for(let i = 0; i < values.length; i++){
+  absoluteValues.push(Math.abs(values[i]))
+}
+
+absoluteValues
+
+const words = ['colin', 'mesuara', 'genghis', 'pak', 'ginny', 'michael', 'tenzin']
+const upperCaseFirstLetters = []
+for(let i = 0; i < words.length; i++){
+  upperCaseFirstLetters.push(words[i].charAt(0).toUpperCase()+ words[i].slice(1))
+}
+
+
+upperCaseFirstLetters
 
 
 
