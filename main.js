@@ -2,7 +2,7 @@
  * YOUR CODE HERE *
 ******************/
 
-const doubleAll = function(nums){
+function doubleAll(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -13,9 +13,7 @@ const doubleAll = function(nums){
   
 }
 
-doubleAll([1, 2, 3, 4])
-
-const yelledGreetings = function(nums){
+function yelledGreetings(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -27,11 +25,7 @@ const yelledGreetings = function(nums){
   return result 
 }
 
-yelledGreetings(['hello', 'there', 'you absolute fiend'])
-
-
-
-const absoluteValues = function(nums){
+function absoluteValues(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -42,10 +36,7 @@ const absoluteValues = function(nums){
   return result
 }
 
-absoluteValues([-1, -3, -10800])
-
-
-const upperCaseFirstLetters = function(nums){
+function upperCaseFirstLetters(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -57,9 +48,8 @@ const upperCaseFirstLetters = function(nums){
   return result 
 }
 
-upperCaseFirstLetters(['heLLo', 'there', 'you absolute fiend'])
 
-const changeToInitials = function(nums){
+function changeToInitials(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -74,9 +64,8 @@ const changeToInitials = function(nums){
 }
 
 
-changeToInitials(['John Smith', 'Phil Rivera', 'Tom Cruise'])
 
-const doubleOdd = function(nums){
+function doubleOdd(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -94,9 +83,8 @@ const doubleOdd = function(nums){
   return result 
 }
 
-doubleOdd([-1, -3, -10800, 2, 7, 9, 8])
 
-const add1ToLeft = function(nums){
+function add1ToLeft(nums){
   const result = []
   
   for(let i = 0; i < nums.length; i++){
@@ -107,11 +95,6 @@ const add1ToLeft = function(nums){
   
   return result 
 }
-
-add1ToLeft([-1, -3, -10800, 2, 7, 9, 8])
-
-
-
 
 /*******************************************
 * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
