@@ -2,36 +2,113 @@
  * YOUR CODE HERE *
 ******************/
 
-const numbers = [-5, 101, 0, 32.5]
-const doubleAll = []
-for(let i = 0; i < numbers.length; i++){
-  doubleAll.push(numbers[i] * 2)
+const doubleAll = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    result.push(nums[i] * 2)
+  }
+  
+  return result
+  
 }
 
-const greetings = ['hello', 'there', 'you absolute fiend']
-const yelledGreetings = []
-for(let i = 0; i < greetings.length; i++){
-  yelledGreetings.push(greetings[i] + '!')
+doubleAll([1, 2, 3, 4])
+
+const yelledGreetings = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    result.push(nums[i] + '?')
+    
+  }
+  
+  return result 
 }
 
-yelledGreetings
+yelledGreetings(['hello', 'there', 'you absolute fiend'])
 
-const values = [-1, -3, 1000]
-const absoluteValues = []
-for(let i = 0; i < values.length; i++){
-  absoluteValues.push(Math.abs(values[i]))
+
+
+const absoluteValues = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    result.push(Math.abs(nums[i]))
+ 
+  }
+  return result
 }
 
-absoluteValues
+absoluteValues([-1, -3, -10800])
 
-const words = ['colin', 'mesuara', 'genghis', 'pak', 'ginny', 'michael', 'tenzin']
-const upperCaseFirstLetters = []
-for(let i = 0; i < words.length; i++){
-  upperCaseFirstLetters.push(words[i].charAt(0).toUpperCase()+ words[i].slice(1))
+
+const upperCaseFirstLetters = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    result.push(nums[i][0].toUpperCase() + nums[i].slice(1).toLowerCase())
+    
+  }
+  
+  return result 
+}
+
+upperCaseFirstLetters(['heLLo', 'there', 'you absolute fiend'])
+
+const changeToInitials = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    const spaceIndex = nums[i].indexOf(' ') + 1
+    
+    result.push(nums[i][0] + nums[i][spaceIndex])
+    
+  }
+  
+  return result 
 }
 
 
-upperCaseFirstLetters
+changeToInitials(['John Smith', 'Phil Rivera', 'Tom Cruise'])
+
+const doubleOdd = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    if(nums[i] % 2 !== 0){
+      
+      result.push(nums[i] * 2)
+      
+    } else {
+      result.push(nums[i])
+    }
+    
+  }
+  
+  return result 
+}
+
+doubleOdd([-1, -3, -10800, 2, 7, 9, 8])
+
+const add1ToLeft = function(nums){
+  const result = []
+  
+  for(let i = 0; i < nums.length; i++){
+    
+    result.push(nums[i] + [1])
+    
+  }
+  
+  return result 
+}
+
+add1ToLeft([-1, -3, -10800, 2, 7, 9, 8])
 
 
 
